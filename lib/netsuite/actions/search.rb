@@ -169,13 +169,13 @@ module NetSuite
               }
             }
           }
-        elsif !columns_structure.empty?
+        elsif !columns_structure.empty? || 1
           {
             'searchRecord' => {
-              '@xsi:type' => "#{namespace}:#{class_name}SearchAdvanced",
+              '@xsi:type' => "#{namespace}:ItemSearchAdvanced",
               :content! => {
                 "#{namespace}:criteria" => criteria_structure,
-                "#{namespace}:columns" => columns_structure
+                # "#{namespace}:columns" => columns_structure
               }
             }
           }
