@@ -44,6 +44,7 @@ module NetSuite
     autoload :Update,           'netsuite/actions/update'
     autoload :Upsert,           'netsuite/actions/upsert'
     autoload :Search,           'netsuite/actions/search'
+    autoload :Login,            'netsuite/actions/login'
   end
 
   module Records
