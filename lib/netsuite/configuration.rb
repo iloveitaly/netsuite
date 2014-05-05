@@ -71,7 +71,7 @@ module NetSuite
           'platformCore:email'    => email,
           'platformCore:password' => password,
           'platformCore:account'  => account.to_s,
-          'platformCore:role'     => { :'@type' => 'role', :@internalId => role }
+          'platformCore:role'     => { :@internalId => role }
         }
       }
     end
